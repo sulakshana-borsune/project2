@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Recipe - MRBox</title>
+
+  <!-- uikit CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
+  <!-- local css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+
+<body>
+
+  <nav class="uk-navbar uk-padding-small uk-navbar-container .uk-light">
+    <div class="uk-navbar-left">
+      <a href="#offcanvas-slide" class="uk-button uk-button-default" uk-toggle><span uk-navbar-toggle-icon></span><span
+          class="uk-margin-small-left"></span></a>
+
+      <div id="offcanvas-slide" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+
+          <ul class="uk-nav uk-nav-default uk-margin">
+            <a href="index.html">
+              <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span></a>
+            <li><a href="/myrecipes">My Recipes</a></li>
+            <hr class="uk-divider-icon">
+            <li class="uk-nav-header">Explore</li>
+            <li><a href="/allrecipes">All Recipes</a></li>
+            <li><a href="/map">Region</a></li>
+            <li><a href="/">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <img src="./assets/images/Navbar_logo.png" class="logo">
+
+  </nav>
+
+  <div class="uk-card uk-card-large uk-card-default uk-padding-large">
+    <form class="uk-form-stacked">
+      <h1>Create Recipes</h1>
+
+
+      <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Recipe Title:</label>
+        <div class="uk-form-controls">
+          <input class="uk-input" type="text" id="title">
+        </div>
+      </div>
+
+      <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Recipe Creator:</label>
+          <div class="uk-form-controls">
+            <input class="uk-input" type="text" id="creatorName" placeholder="Who created this recipe?"> 
+          </div>
+      </div>
+
+      <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Recipe Type:</label>
+        <div class="uk-form-controls">
+          <input class="uk-input" type="text" id="recipeType">
+        </div>
+      </div>
+
+
+      <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Serving Size:</label>
+        <div class="uk-form-controls">
+          <input class="uk-input" for="form-stacked-text" type="number" id="servingSize"
+            placeholder="How many people will this serve?">
+        </div>
+      </div>
+
+
+      <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Directions:</label>
+        <div class="uk-form-controls uk-form-width-large"></div>
+        <input type="text" id="recipeText">
+
+        <p uk-margin>
+          <button class="uk-button uk-button-secondary uk-button-small" id="createRecipe" type="submit">Create
+            Recipe!</button>
+        </p>
+      </div>
+  </div>
+  </form>
+  </div>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
+  <script src="assets/js/createRecipe.js"></script>
+
+</body>
+
+</html>
+
+<!-- <form>
+    <div class="form-group">
+      <label for="title">Recipe Title:</label>
+      <input type="text" class="form-control" id="title">
+    </div>
+    <div class="form-group">
+      <label for="creatorName">Who created this recipe?</label>
+      <input type="text" class="form-control" id="creatorName">
+    </div>
+    <div class="form-group">
+      <label for="recipeType">Recipe Type:</label>
+      <input type="text" class="form-control" id="recipeType">
+    </div>
+    <div class="form-group">
+      <label for="servingSize">Serving Size(write in the form of a number):</label>
+      <input type="number" class="form-control" id="servingSize">
+    </div>
+    <div class="form-group">
+      <label for="recipeText">Recipe Text:</label>
+      <input type="text" class="form-control" id="recipeText">
+    </div>
+    <button id="createRecipe" type="submit">Create Recipe</button>
+  </form> -->
+
+  <!-- <form>
+    <div class="form-group">
+      <label for="title">Recipe Title:</label>
+      <input type="text" class="form-control" id="title">
+    </div>
+    <div class="form-group">
+      <label for="creatorName">Who created this recipe?</label>
+      <input type="text" class="form-control" id="creatorName">
+    </div>
+    <div class="form-group">
+      <label for="recipeType">Recipe Type:</label>
+      <input type="text" class="form-control" id="recipeType">
+    </div>
+    <div class="form-group">
+      <label for="servingSize">Serving Size(write in the form of a number):</label>
+      <input type="number" class="form-control" id="servingSize">
+    </div>
+    <div class="form-group">
+      <label for="recipeText">Recipe Text:</label>
+      <input type="text" class="form-control" id="recipeText">
+    </div>
+    <button id="createRecipe" type="submit">Create Recipe</button>
+  </form> -->
+

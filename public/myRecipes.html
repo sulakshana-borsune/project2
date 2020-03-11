@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Recipes - MRBox</title>
+
+  <!-- uikit CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
+  <!-- local css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+
+<body>
+  <nav class="uk-navbar uk-padding-small uk-navbar-container .uk-light">
+    <div class="uk-navbar-left">
+      <a href="#offcanvas-slide" class="uk-button uk-button-default" uk-toggle><span uk-navbar-toggle-icon></span><span
+          class="uk-margin-small-left"></span></a>
+
+      <div id="offcanvas-slide" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+
+          <ul class="uk-nav uk-nav-default uk-margin">
+            <a href="index.html">
+              <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span></a>
+            <li><a href="/myrecipes">My Recipes</a></li>
+            <hr class="uk-divider-icon">
+            <li class="uk-nav-header">Explore</li>
+            <li><a href="/allrecipes">All Recipes</a></li>
+            <li><a href="/map">Region</a></li>
+            <li><a href="/">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <img src="assets/images/Navbar_logo.png" class="logo">
+
+  </nav>
+
+  <br>
+  <br>
+  <div>
+    <h1 style="margin-left: 25px" class="uk-heading-line uk-heading-large"><span>My Recipes</span></h1>
+ <h3 style="margin-left: 25px">Welcome to My Recipes page! To create a new recipe, click the button below.</h3></p>
+  </div>
+  <div>
+    <p uk-margin>
+      <button id="createRecipe" class="uk-button uk-button-secondary uk-button-large 
+        uk-width-1-1">Create A Recipe</button>
+    </p>
+    <hr class="uk-divider-icon" />
+
+    <h2 id=userDisplay></h2>
+    <div id=myRecDisplay></div>
+
+
+  </div>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
+  <script src="./assets/js/myRecipes.js"></script>
+
+</body>
+
+</html>

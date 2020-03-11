@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regional Recipes</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <link rel="stylesheet" href="./assets/css/style.css" />   
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- uikit CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
+    <!-- local css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+
+<body>
+    <nav class="uk-navbar uk-padding-small uk-navbar-container .uk-light">
+        <div class="uk-navbar-left">
+            <a href="#offcanvas-slide" class="uk-button uk-button-default" uk-toggle><span
+                    uk-navbar-toggle-icon></span><span class="uk-margin-small-left"></span></a>
+    
+            <div id="offcanvas-slide" uk-offcanvas>
+                <div class="uk-offcanvas-bar">
+    
+                    <ul class="uk-nav uk-nav-default uk-margin">
+                        <a href="/">
+                            <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span></a>
+                        <li><a href="/myrecipes">My Recipes</a></li>
+                        <hr class="uk-divider-icon">
+                        <li class="uk-nav-header">Explore</li>
+                        <li><a href="/allrecipes">All Recipes</a></li>
+                        <li><a href="/map">Region</a></li>
+                        <li><a href="/">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <img src="./assets/images/Navbar_logo.png" class="logo">
+    
+    </nav>
+    
+    <br>
+    <br>
+    <div>
+        <h1 style="margin-left: 25px" class="uk-heading-line uk-heading-large"><span>Recipe Regions</span></h1>
+    </div>
+
+    <div id="mapid"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/map.js"></script>
+
+    <div id="regionRecipes"></div>
+</body>
+
+</html>
